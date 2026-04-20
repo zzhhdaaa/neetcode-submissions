@@ -1,0 +1,11 @@
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        c = ""
+        for i in range(0, len(s)//2):
+            c = s[i]
+            s[i] = s[len(s)-1-i]
+            s[len(s)-1-i] = c
+        
